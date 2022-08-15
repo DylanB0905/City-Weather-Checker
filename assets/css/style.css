@@ -1,0 +1,21 @@
+.jumbotron {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+
+}
+
+aside {
+    border-style: solid;
+    position: absolute;
+    left: auto;
+    margin-top: 20px;
+}
+
+.results {
+    border-style: solid;
+    position: absolute;
+    right: 130px;
+    margin-top: 20px;
+}
