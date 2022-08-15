@@ -12,35 +12,100 @@
 
 <body>
     
-    <header class="jumbotron ">
-        <h1 id="appTitle">City Weather Dashboard</h1>
+    <header class="jumbotron py-5">
+        <h1 class="appTitle is-size-1">City Weather Dashboard</h1>
     </header>
     
     <main>
 
         <aside class="col-sm">
            
-            <h2>Search For a City:</h2>
-            <input type="text" placeholder="City Name" class="citySearch">
-            <button class="btn">Search</button>
-            <div class="searchHistory"></div>
+            <h2 class="is-size-2">Search For a City:</h2>
+            
+            <input type="text" placeholder="City Name" class="citySearch is-size-4">
+            
+            <button type="submit" class="btn ">Search</button>
+            
+            <div class="box table-box">
+                <div class="table-container">
+                  <table id="cityList" class="table is-bordered">
+                    <tr></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
         
         </aside>
 
-        <div class="container results col-lg">
+       <section class="column">
+            <div id="weatherData" class="columns box content">
+                <div class="column current-city-data">
+                <h2 id="cityName"></h2>
+                <h3 id="currentCond"></h3>
+                <h3 id="temp"></h3>
+                <h3 id="highTemp"></h3>
+                <h3 id="humid"></h3>
+                <h3 id="windSpeed"></h3>
+                <h3 id="uvIndex"></h3>
+                </div>
+            </div>
 
-            <div class="forcastToday"></div>
-        </div>
+            <div class="container">
+                <div class="content">
+                    <h2>5 Day Forcast:</h2>
+                    <div class="columns">
+                        <div class="column card">
+                            <div id="day-1" class="cardContent">
+                                <h2 id="date1" class="has-text-white"></h2>
+                                <div id="icon1"></div>
+                                <h3 id="temp1" class="has-text-white"></h3>
+                                <h3 id="hum1" class="has-text-white"></h3>
+                            </div>
+                        </div>
 
-        <div class="container forcast5Day">
-            <h2>5-Day Forcast</h2>
-            
+                        <div class="column card">
+                            <div id="day-2" class="cardContent">
+                                <h2 id="date2" class="has-text-white"></h2>
+                                <div id="icon2"></div>
+                                <h3 id="temp2" class="has-text-white"></h3>
+                                <h3 id="hum2" class="has-text-white"></h3>
+                            </div>
+                        </div>
 
-        </div>
+                        <div class="column card">
+                            <div id="day-3" class="cardContent">
+                                <h2 id="date3" class="has-text-white"></h2>
+                                <div id="icon3"></div>
+                                <h3 id="temp3" class="has-text-white"></h3>
+                                <h3 id="hum3" class="has-text-white"></h3>
+                            </div>
+                        </div>
+
+                        <div class="column card">
+                            <div id="day-4" class="cardContent">
+                                <h2 id="date4" class="has-text-white"></h2>
+                                <div id="icon4"></div>
+                                <h3 id="temp4" class="has-text-white"></h3>
+                                <h3 id="hum4" class="has-text-white"></h3>
+                            </div>
+                        </div>
+
+                        <div class="column card">
+                            <div id="day-5" class="cardContent">
+                                <h2 id="date5" class="has-text-white"></h2>
+                                <div id="icon5"></div>
+                                <h3 id="temp5" class="has-text-white"></h3>
+                                <h3 id="hum5" class="has-text-white"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
         
     </main>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>

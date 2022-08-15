@@ -1,21 +1,31 @@
-.jumbotron {
-    text-align: center;
-    background-color: blue;
-    color: white;
-    padding: 15px;
-
-}
-
 aside {
-    border-style: solid;
-    position: absolute;
-    left: auto;
-    margin-top: 20px;
+    padding-top: 10px;
 }
 
-.results {
+.jumbotron {
+    background-image: linear-gradient(to right, blue, cyan);
+    color: white;
+    text-align: center;
+}
+
+#weatherData {
     border-style: solid;
-    position: absolute;
-    right: 130px;
-    margin-top: 20px;
+}
+
+.current-city-data {
+    min-height: 250px;
+}
+
+tr {
+    margin: 5px;
+}
+
+.card {
+    background-color: blue;
+    margin: 2px;
+    min-height: 250px;
+}
+
+.cardContent {
+    padding: 15px;
 }
